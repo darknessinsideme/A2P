@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 
-const applicantCtrl = require('../controllers/applicant');
+const applicantCtrl = require('./controllers/applicant');
 
 router.get('/', applicantCtrl.getSigninForm);
 router.post('/', applicantCtrl.createApplicant);
